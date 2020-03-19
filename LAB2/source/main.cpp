@@ -19,7 +19,7 @@ INT_PTR CALLBACK DialogProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lPara
           //MessageBox(hwndDlg, TEXT("Prosze o nie uiszczanie klikniecia"), TEXT("Klikniecie"), MB_OK);
           HWND hwndEditBox = GetDlgItem(hwndDlg, IDC_EDIT1);
             int iTextLength = GetWindowTextLength(hwndEditBox);
-            char szText[500];
+            wchar_t szText[500];
             GetWindowText(hwndEditBox, szText, iTextLength + 1);
             int number;
             if (iTextLength == 2) {
@@ -28,8 +28,8 @@ INT_PTR CALLBACK DialogProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lPara
             if (iTextLength == 1) {
               number = (szText[0] - 48);
             }
-            CHAR szText3[200];
-            wsprintf(szText3, "liczba to: %d", random);
+            wchar_t szText3[200];
+            wsprintf(szText3, L"liczba to: %d" , random);
             if (number > random) {
               counter++;
               MessageBox(hwndDlg, TEXT("Mniej"), TEXT("Klikniecie"), MB_OK);
@@ -43,9 +43,9 @@ INT_PTR CALLBACK DialogProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lPara
             if (number == random) {
               counter++;
               MessageBox(hwndDlg, TEXT("Gratki"), TEXT("Klikniecie"), MB_OK);
-              CHAR szText2[200];
+              wchar_t szText2[200];
               MessageBox(hwndDlg, szText3, TEXT("Klikniecie"), MB_OK);
-              wsprintf(szText2, "liczba prób %d", counter);
+              wsprintf(szText2, L"liczba prób %d", counter);
               MessageBox(hwndDlg, szText2, TEXT("Klikniecie"), MB_OK);
               counter = 0;
             }
