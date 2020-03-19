@@ -1,98 +1,85 @@
 #include <Windows.h>
-#include <cstdlib> //rand
-#include <time.h> //time
-#include <string> //stoi
-
 #include "res.h"
+#include <time.h>  
+#include <stdlib.h>  
 
-//#define DEBUG //do podpatrywania
-
-//ZMIENNE GLOBALNE - nie mog³em znaleŸæ wiadomoœci wysy³anej przy pokazywaniu-"inicjalizacji" okienka
-INT iNumber;
-INT iGuessCount;
-
-INT_PTR CALLBACK WindowProc(HWND, UINT, WPARAM, LPARAM);
-
-int WINAPI wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPTSTR szCmdLine, _In_ int iCmdShow)
-{
-  srand((UINT)time(NULL)); //zmienne ziarno
-  iNumber = (rand() % 40) + 1;
-
-  iGuessCount = 1; //nr próby
-
-  HWND hMainWindow = CreateDialogW(hInstance, MAKEINTRESOURCEW(IDD_MAINVIEW), NULL, WindowProc);
-
-#ifdef DEBUG
-  HWND hTip = GetDlgItem(hMainWindow, IDC_STATICINFO);
-  WCHAR szText[10];
-  wsprintfW(szText, L"%d", iNumber);
-  SetWindowTextW(hTip, szText);
-#endif
-
-  ShowWindow(hMainWindow, iCmdShow);
-
-  MSG msg = {};
-  while (GetMessageW(&msg, NULL, 0, 0))
-  {
-    TranslateMessage(&msg);
-    DispatchMessageW(&msg);
-  }
-
-  return 0;
-}
-
-INT_PTR CALLBACK WindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
+  int random;
+  int counter=0;
+INT_PTR CALLBACK DialogProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
   switch (uMsg)
   {
-  case WM_CLOSE:  //zamykanie
-    DestroyWindow(hWnd);
-    PostQuitMessage(0);
-    return TRUE;
   case WM_COMMAND:
-    //co sie stao
     switch (HIWORD(wParam))
     {
-    case BN_CLICKED:
-      //komu sie stao
-      switch (LOWORD(wParam))
-      {
-      case IDC_BUTTONGUESS:
-        HWND hEditGuess = GetDlgItem(hWnd, IDC_EDITGUESS);
-        if (hEditGuess == NULL)
+      case BN_CLICKED:
+        switch(LOWORD(wParam))
         {
-          PostQuitMessage(0);
-          return 0;
+        case IDC_BUTTON1:
+          //MessageBox(hwndDlg, TEXT("Prosze o nie uiszczanie klikniecia"), TEXT("Klikniecie"), MB_OK);
+          HWND hwndEditBox = GetDlgItem(hwndDlg, IDC_EDIT1);
+            int iTextLength = GetWindowTextLength(hwndEditBox);
+            char szText[500];
+            GetWindowText(hwndEditBox, szText, iTextLength + 1);
+            int number;
+            if (iTextLength == 2) {
+              number = (szText[0] - 48) * 10 + (szText[1] - 48);
+            }
+            if (iTextLength == 1) {
+              number = (szText[0] - 48);
+            }
+            CHAR szText3[200];
+            wsprintf(szText3, "liczba to: %d", random);
+            if (number > random) {
+              counter++;
+              MessageBox(hwndDlg, TEXT("Mniej"), TEXT("Klikniecie"), MB_OK);
+             // MessageBox(hwndDlg, szText3, TEXT("Klikniecie"), MB_OK);
+            }
+            if (number < random) {
+              counter++;
+              MessageBox(hwndDlg, TEXT("Wiêcej"), TEXT("Klikniecie"), MB_OK);
+            //  MessageBox(hwndDlg, szText3, TEXT("Klikniecie"), MB_OK);
+            }
+            if (number == random) {
+              counter++;
+              MessageBox(hwndDlg, TEXT("Gratki"), TEXT("Klikniecie"), MB_OK);
+              CHAR szText2[200];
+              MessageBox(hwndDlg, szText3, TEXT("Klikniecie"), MB_OK);
+              wsprintf(szText2, "liczba prób %d", counter);
+              MessageBox(hwndDlg, szText2, TEXT("Klikniecie"), MB_OK);
+              counter = 0;
+            }
+         // SetWindowText((HWND)lParam, szText);
+          return TRUE;
         }
-        INT iTextLength = GetWindowTextLengthW(hEditGuess);
-        WCHAR szText[100];
-        GetWindowTextW(hEditGuess, szText, iTextLength + 1);
-
-        INT iGuess = (INT)wcstol(szText, NULL, 10);
-        if (iGuess == iNumber)
-        {
-          wsprintfW(szText, L"%d - trafione za %d razem.", iNumber, iGuessCount);
-          MessageBoxW(hWnd, szText, L"Koniec", MB_OK);
-          PostQuitMessage(0); //wyjœcie
-          return 0;
-        }
-        else
-        {
-          iGuessCount++;
-          SetWindowTextW(hEditGuess, L""); //czyszczenie po strzale
-          //info zwrotne
-          HWND hHintText = GetDlgItem(hWnd, IDC_STATICHINT);
-          if (iGuess < iNumber) //za ma³o
-            wsprintfW(szText, L"%d - Za ma³o", iGuess);
-          else
-            wsprintfW(szText, L"%d - Za du¿o", iGuess);
-          SetWindowTextW(hHintText, szText);
-        }
-
-        return 0;
-      }
     }
-
+    return FALSE;
+  case WM_CLOSE:
+    DestroyWindow(hwndDlg); //niszczenie okienka
+    PostQuitMessage(0); //Polecenie zakoñczenia aplikacji
+    return TRUE;
+  case WM_LBUTTONDOWN:
+    CHAR szText2[200];
+   // wsprintf(szText, "Kliknales myszka x=%d, y=%d", LOWORD(lParam), HIWORD(lParam));
+    //MessageBox(hwndDlg, szText, TEXT("Klikniecie"), MB_OK);
+    return TRUE;
   }
   return FALSE;
 }
+
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR szCmdLine, int iCmdShow)
+  {
+  srand((unsigned int)time(NULL));
+  random= (rand() % 40) +1;
+
+  HWND hwndMainWindow = CreateDialog(hInstance, MAKEINTRESOURCE(IDD_MAINVIEW), NULL, DialogProc);
+  ShowWindow(hwndMainWindow, iCmdShow);
+
+  MSG msg = {};
+  while (GetMessage(&msg, NULL, 0, 0))
+  {
+    TranslateMessage(&msg);
+    DispatchMessage(&msg);
+  }
+    return 0;
+  }
