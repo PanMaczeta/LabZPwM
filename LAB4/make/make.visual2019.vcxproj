@@ -155,8 +155,12 @@
     <ResourceCompile Include="..\source\res.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\source\murzimny.ico" />
-    <Image Include="murzimny.ico" />
+    <Image Include="..\source\icon1.ico" />
+    <Image Include="..\source\icon2.ico" />
+    <Image Include="..\source\icon3.ico" />
+    <Image Include="icon1.ico" />
+    <Image Include="icon2.ico" />
+    <Image Include="icon3.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

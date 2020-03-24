@@ -30,10 +30,22 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="murzimny.ico">
+    <Image Include="icon1.ico">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="..\source\murzimny.ico">
+    <Image Include="icon2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\source\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\source\icon2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon3.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\source\icon3.ico">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

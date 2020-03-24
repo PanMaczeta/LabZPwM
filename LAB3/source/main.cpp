@@ -1,17 +1,61 @@
 #include <Windows.h>
 #include "res.h"
 
-INT_PTR CALLBACK WindowProc(HWND, UINT, WPARAM, LPARAM);
-HICON LoadIconA(HINSTANCE hInstance, LPCSTR IDI_MAINICON3) ;
+HINSTANCE g_hInstance;
 
-
-int WINAPI wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPTSTR szCmdLine, _In_ int iCmdShow)
+INT_PTR CALLBACK DialogProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
-  
-  return 0;
+  switch(uMsg)
+  {
+  case WM_INITDIALOG:
+  {
+    HICON hIcon = LoadIcon(g_hInstance, MAKEINTRESOURCE(IDI_DRUGA));
+    SendMessage(hwndDlg, WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
+    return FALSE;
+  }
+  case WM_COMMAND:
+    switch(HIWORD(wParam))
+    {
+    case BN_CLICKED:
+      switch(LOWORD(wParam))
+      {
+      case IDC_BUTTON1:
+        //MessageBox(hwndDlg,TEXT("Test"),TEXT("Klikniecie"),MB_OK);
+        //Zmieniæ pole text na przycisku na ten z EditBox
+        HWND hwndEditBox = GetDlgItem(hwndDlg, IDC_EDIT1); // I tried with and without this
+        int iTextLength = GetWindowTextLength(hwndEditBox);
+        CHAR szText[500];
+        GetWindowText(hwndEditBox, szText, iTextLength+1);
+
+        SetWindowText((HWND)lParam,szText);
+        return TRUE;
+      }
+    }
+    return FALSE;
+  case WM_LBUTTONDOWN:
+    CHAR szText[200];
+    wsprintf(szText,"Kliknales myszka x=%d,y=%d",LOWORD(lParam),HIWORD(lParam));
+    MessageBox(hwndDlg,szText,TEXT("Klikniecie"),MB_OK);
+    return TRUE;
+  case WM_CLOSE:
+    DestroyWindow(hwndDlg);
+    PostQuitMessage(0);
+    return TRUE;
+  }
+  return FALSE;
 }
 
-INT_PTR CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
+int WINAPI WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR szCmdLine, int iCmdShow)
 {
-  return DefWindowProcW(hwnd, uMsg, wParam, lParam);
+  g_hInstance = hInstance;
+  HWND hwndMainWindow = CreateDialog(hInstance,MAKEINTRESOURCE(IDD_MAINVIEW),NULL,DialogProc);
+  ShowWindow(hwndMainWindow,iCmdShow);
+
+  MSG msg = {};
+  while(GetMessage(&msg, NULL, 0, 0))
+  {
+    TranslateMessage(&msg);
+    DispatchMessage(&msg);
+  }
+  return 0;
 }
