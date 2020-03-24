@@ -14,6 +14,8 @@ INT_PTR CALLBACK hWindowProcKa(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lP
   case WM_INITDIALOG:
     HICON hIcon = LoadIcon(g_hInstance, MAKEINTRESOURCE(IDI_DRUGA));
     SendMessage(hwndDlg, WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
+    HMENU hMenuKa = LoadMenu(g_hInstance, MAKEINTRESOURCE(IDR_MENU3));
+    SetMenu(hwndDlg, hMenuKa);
     return FALSE;
   }
   return FALSE;
@@ -30,6 +32,8 @@ INT_PTR CALLBACK hWindowProcKo(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lP
   case WM_INITDIALOG:
     HICON hIcon = LoadIcon(g_hInstance, MAKEINTRESOURCE(IDI_TRZECIA));
     SendMessage(hwndDlg, WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
+    HMENU hMenuKo = LoadMenu(g_hInstance, MAKEINTRESOURCE(IDR_MENU2));
+    SetMenu(hwndDlg, hMenuKo);
     return FALSE;
   }
   return FALSE;

@@ -58,6 +58,1517 @@ IDI_DRUGA               ICON                    "icon2.ico"
 
 IDI_TRZECIA             ICON                    "icon3.ico"
 
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU2 MENU
+BEGIN
+    POPUP "Aparycja"
+    BEGIN
+        POPUP "Budowa cia≥a"
+        BEGIN
+            POPUP "WiÍkszy"
+            BEGIN
+                POPUP "Grubokoúcisty"
+                BEGIN
+                    POPUP "Puszysty"
+                    BEGIN
+                        MENUITEM "NO GRUBY",                    ID_PUSZYSTY_NOGRUBY
+                    END
+                END
+            END
+        END
+        POPUP "W≥osy"
+        BEGIN
+            POPUP "Powierzchnia p≥aska"
+            BEGIN
+                POPUP "G≥owa niczym zwierciad≥o"
+                BEGIN
+                    POPUP "Aplerezowy"
+                    BEGIN
+                        POPUP "Bezw≥osy"
+                        BEGIN
+                            MENUITEM "£ysy",                        ID_BEZW40408
+                        END
+                    END
+                END
+            END
+        END
+        POPUP "Wzrost"
+        BEGIN
+            POPUP "Duøy"
+            BEGIN
+                POPUP "Wysoki"
+                BEGIN
+                    MENUITEM "199 cm",                      ID_WYSOKI_199CM
+                    MENUITEM "200 cm",                      ID_WYSOKI_200CM
+                    MENUITEM "198 cm",                      ID_WYSOKI_198CM
+                    MENUITEM "201 cm",                      ID_WYSOKI_201CM
+                END
+            END
+        END
+    END
+    POPUP "Uzbrojenie"
+    BEGIN
+        POPUP "BroÒ rÍczna"
+        BEGIN
+            POPUP "JednorÍczna"
+            BEGIN
+                MENUITEM "Miecz",                       ID_JEDNOR40423
+                MENUITEM "Bu≥awa",                      ID_JEDNOR40424
+                MENUITEM "Pa≥ka",                       ID_JEDNOR40425
+                MENUITEM "Ma≥y kamieÒ",                 ID_JEDNOR40426
+            END
+            POPUP "DwurÍczna"
+            BEGIN
+                MENUITEM "Miecz DwurÍczny",             ID_DWUR40427
+                MENUITEM "TopÛr bojowy",                ID_DWUR40428
+                MENUITEM "Bu≥awa dwurÍczna",            ID_DWUR40429
+                MENUITEM "Wielki kamieÒ",               ID_DWUR40430
+                MENUITEM "Kompan",                      ID_DWUR40431
+            END
+        END
+        POPUP "BroÒ palna"
+        BEGIN
+            POPUP "BroÒ krÛtka"
+            BEGIN
+                MENUITEM "Rewolwer",                    ID_BRO40496
+                MENUITEM "Obrzyn",                      ID_BRO40497
+            END
+            POPUP "BroÒ d≥uga"
+            BEGIN
+                MENUITEM "Winchester",                  ID_BRO40498
+                MENUITEM "Springfield",                 ID_BRO40499
+            END
+            POPUP "BroÒ laserowa"
+            BEGIN
+                MENUITEM "Pew Pew",                     ID_BRO40500
+            END
+        END
+        POPUP "Walka wrÍcz"
+        BEGIN
+            MENUITEM "PiÍúci",                      ID_WALKAWR40432
+            MENUITEM "Kastet",                      ID_WALKAWR40433
+        END
+    END
+    POPUP "Brakujπce organy"
+    BEGIN
+        POPUP "Uk≥ad szkieletowy"
+        BEGIN
+            POPUP "Koúci d≥ugie"
+            BEGIN
+                MENUITEM "KoúÊ ramienna",               ID_KO40035
+                MENUITEM "KoúÊ ≥okciowa",               ID_KO40036
+                MENUITEM "KoúÊ promieniowa",            ID_KO40037
+                MENUITEM "KoúÊ udowa",                  ID_KO40038
+                MENUITEM "KoúÊ piszczelowa",            ID_KO40039
+                MENUITEM "KoúÊ strza≥kowa",             ID_KO40040
+            END
+            POPUP "Koúci p≥askie"
+            BEGIN
+                MENUITEM "Sklepienie mÛzgoczaszki",     ID_KO40041
+                MENUITEM "Mostek",                      ID_KO40042
+                MENUITEM "KoúÊ biodrowa",               ID_KO40043
+                MENUITEM "£opatka",                     ID_KO40044
+            END
+            POPUP "Koúci krÛtkie"
+            BEGIN
+                POPUP "Koúci nadgarstka"
+                BEGIN
+                    MENUITEM "KoúÊ ≥Ûdeczkowata",           ID_KO40056
+                    MENUITEM "KoúÊ ksiÍøycowata",           ID_KO40057
+                    MENUITEM "KoúÊ trÛjgraniasta",          ID_KO40058
+                    MENUITEM "KoúÊ grochowata",             ID_KO40059
+                    MENUITEM "KoúÊ czworoboczna wiÍksza",   ID_KO40060
+                    MENUITEM "KoúÊ czworoboczna mniejsza",  ID_KO40061
+                    MENUITEM "KoúÊ g≥Ûwkowata",             ID_KO40062
+                    MENUITEM "KoúÊ haczykowata",            ID_KO40063
+                END
+                POPUP "Koúci stÍpu"
+                BEGIN
+                    MENUITEM "KoúÊ skokowa",                ID_KO40047
+                    MENUITEM "KoúÊ ≥Ûdkowata",              ID_KO40048
+                    MENUITEM "KoúÊ piÍtowa z guzem piÍtowym", ID_KO40049
+                    MENUITEM "KoúÊ szeúcienna",             ID_KO40050
+                    POPUP "KoúÊ klinowata"
+                    BEGIN
+                        MENUITEM "Przyúrodkowa",                ID_KO40052
+                        MENUITEM "Poúrodkowa",                  ID_KO40053
+                        MENUITEM "Boczna",                      ID_KO40054
+                    END
+                END
+                MENUITEM "Trzeszczka",                  ID_KO40055
+            END
+            POPUP "Koúci pneumatyczne"
+            BEGIN
+                MENUITEM "KoúÊ klinowa",                ID_KO40064
+                MENUITEM "KoúÊ czo≥owa",                ID_KO40065
+                MENUITEM "KoúÊ sitowa",                 ID_KO40066
+                MENUITEM "KoúÊ skroniowa",              ID_KO40067
+                MENUITEM "SzczÍka",                     ID_KO40068
+            END
+            POPUP "Koúci rÛønokszta≥tne"
+            BEGIN
+                MENUITEM "Øuchwa",                      ID_KO40069
+                MENUITEM "Rzepka",                      ID_KO40070
+                MENUITEM "Koúci podniebne",             ID_KO40071
+                POPUP "Kosteczki s≥uchowe"
+                BEGIN
+                    MENUITEM "M≥oteczek",                   ID_KOSTECZKIS40074
+                    MENUITEM "Kowade≥ko",                   ID_KOSTECZKIS40075
+                    MENUITEM "Strzemiπczko",                ID_KOSTECZKIS40076
+                END
+                POPUP "KrÍgi"
+                BEGIN
+                    MENUITEM "Beztrzonowe",                 ID_KR40077
+                    MENUITEM "Pe≥nocz≥onowe",               ID_KR40078
+                    MENUITEM "DwuwklÍs≥e",                  ID_KR40079
+                    MENUITEM "Ty≥owklÍs≥e",                 ID_KR40080
+                    MENUITEM "PrzodowklÍs≥e",               ID_KR40081
+                    MENUITEM "Siode≥kowate",                ID_KR40082
+                    MENUITEM "P≥askie",                     ID_KR40083
+                END
+            END
+        END
+        POPUP "Uk≥ad pokarmowy"
+        BEGIN
+            POPUP "PrzewÛd pokarmowy"
+            BEGIN
+                MENUITEM "Jama ustna",                  ID_PRZEW40084
+                MENUITEM "Gard≥o",                      ID_PRZEW40085
+                MENUITEM "Prze≥yk",                     ID_PRZEW40086
+                MENUITEM "Øo≥πdek",                     ID_PRZEW40087
+                MENUITEM "Jelito cienkie",              ID_PRZEW40088
+                MENUITEM "Jelito grube",                ID_PRZEW40089
+            END
+            POPUP "Gruczo≥y"
+            BEGIN
+                MENUITEM "Wπtroba",                     ID_GRUCZO40090
+                MENUITEM "Trzustka",                    ID_GRUCZO40091
+                MENUITEM "ålinianki",                   ID_GRUCZO40092
+            END
+        END
+        POPUP "Uk≥ad nerwowy"
+        BEGIN
+            POPUP "Uk≥ad nerwowy somatyczny"
+            BEGIN
+                POPUP "Uk≥ad piramidowy"
+                BEGIN
+                    MENUITEM "Droga korowo-jπdrowa",        ID_UK40095
+                    MENUITEM "Droga korowo-rdzeniowa",      ID_UK40096
+                END
+                POPUP "Uk≥ad pozapiramidowy"
+                BEGIN
+                    POPUP "Sk≥adowe anatomiczne"
+                    BEGIN
+                        MENUITEM "Prπøkowie",                   ID_SK40098
+                        MENUITEM "Ga≥ka blada",                 ID_SK40099
+                        MENUITEM "Jπdro niskowzgÛrzowe",        ID_SK40100
+                        MENUITEM "Jπdra wzgÛrza",               ID_SK40101
+                        MENUITEM "Istota czarna",               ID_SK40102
+                        MENUITEM "Jπdro czerwienne",            ID_SK40103
+                        MENUITEM "Jπdro niskowzgÛrzowe Luysa",  ID_SK40104
+                        MENUITEM "Jπdro konarowo-mostkowe",     ID_SK40105
+                        MENUITEM "Kora okolicy przedruchowej p≥ata czo≥owego w 6 i 8 polach Brodmana", ID_SK40106
+                    END
+                END
+            END
+            POPUP "Uk≥ad nerwowy autonomiczny"
+            BEGIN
+                POPUP "Uk≥ad wspÛ≥czulny"
+                BEGIN
+                    POPUP "Zwoje"
+                    BEGIN
+                        POPUP "CzÍúÊ g≥owowa"
+                        BEGIN
+                            MENUITEM "ZwÛj rzÍskowy",               ID_CZ40117
+                        END
+                        POPUP "PieÒ wspÛ≥czulny"
+                        BEGIN
+                            POPUP "CzÍúÊ szyjna"
+                            BEGIN
+                                MENUITEM "ZwÛj szyjny gÛrny",           ID_CZ40122
+                                MENUITEM "ZwÛj szyjny úrodkowy",        ID_CZ40123
+                                MENUITEM "ZwÛj krÍgowy",                ID_CZ40124
+                                MENUITEM "ZwÛj szyjny dolny",           ID_CZ40125
+                                MENUITEM "ZwÛj gwiaüdzisty",            ID_CZ40126
+                            END
+                            POPUP "CzÍúÊ piersiowa"
+                            BEGIN
+                                MENUITEM "Zwoje piersiowe",             ID_CZ40127
+                            END
+                            POPUP "CzÍúÊ brzuszna"
+                            BEGIN
+                                MENUITEM "Zwoje lÍdüwiowe",             ID_CZ40128
+                            END
+                            POPUP "CzÍúÊ miednicza"
+                            BEGIN
+                                MENUITEM "Zwoje krzyøowe",              ID_CZ40129
+                                MENUITEM "ZwÛj nieparzysty",            ID_CZ40130
+                            END
+                        END
+                    END
+                    POPUP "Nerwy"
+                    BEGIN
+                        POPUP "Trzewne"
+                        BEGIN
+                            POPUP "Nerwy trzewne piersiowe"
+                            BEGIN
+                                MENUITEM "Nerw trzewny wiÍkszy",        ID_NERWYTRZEWNEPIERSIOWE_NERWTRZEWNYWI40136
+                                MENUITEM "Nerw trzewny mniejszy",       ID_NERWYTRZEWNEPIERSIOWE_NERWTRZEWNYMNIEJSZY
+                                MENUITEM "Nerw trzewny najniøszy",      ID_NERWYTRZEWNEPIERSIOWE_NERWTRZEWNYNAJNI40138
+                            END
+                            MENUITEM "Nerwy trzewne lÍdüwiowe",     ID_TRZEWNE_NERWYTRZEWNEL40134
+                            MENUITEM "Nerwy trzewne krzyøowe",      ID_TRZEWNE_NERWYTRZEWNEKRZY40135
+                        END
+                        POPUP "Naczyniowe"
+                        BEGIN
+                            MENUITEM "KrÛtkie nerwy rzÍskowe",      ID_NACZYNIOWE_KR40139
+                            MENUITEM "Nerwy sercowe",               ID_NACZYNIOWE_NERWYSERCOWE
+                        END
+                    END
+                    POPUP "Sploty"
+                    BEGIN
+                        MENUITEM "Splot szyjno-tÍtniczy wewnÍtrzny", ID_SPLOTY_SPLOTSZYJNO
+                        MENUITEM "Splot sercowy",               ID_SPLOTY_SPLOTSERCOWY
+                        MENUITEM "Splot prze≥ykowy",            ID_SPLOTY_SPLOTPRZE40143
+                        MENUITEM "Splot p≥ucny",                ID_SPLOTY_SPLOTP40144
+                        MENUITEM "Splot trzewny",               ID_SPLOTY_SPLOTTRZEWNY
+                        MENUITEM "Splot miÍdzykrezkowy",        ID_SPLOTY_SPLOTMI40146
+                        MENUITEM "Splot podbrzuszny gÛrny",     ID_SPLOTY_SPLOTPODBRZUSZNYG40147
+                        MENUITEM "Splot podbrzuszny dolny",     ID_SPLOTY_SPLOTPODBRZUSZNYDOLNY
+                    END
+                END
+                MENUITEM "Uk≥ad przywspÛ≥czulny",       ID_UK40108
+            END
+        END
+        POPUP "Uk≥ad dokrewny"
+        BEGIN
+            POPUP "Gruczo≥y"
+            BEGIN
+                MENUITEM "PodwzgÛrze",                  ID_GRUCZO40149
+                MENUITEM "Przysadka mÛzgowa",           ID_GRUCZO40150
+                MENUITEM "Szyszynka",                   ID_GRUCZO40151
+                MENUITEM "Tarczyca",                    ID_GRUCZO40152
+                MENUITEM "Przytarczyce",                ID_GRUCZO40153
+                MENUITEM "Grasica",                     ID_GRUCZO40154
+                MENUITEM "Trzustka",                    ID_GRUCZO40155
+                MENUITEM "Nadnercza",                   ID_GRUCZO40156
+                MENUITEM "Jπdra",                       ID_GRUCZO40157
+                MENUITEM "Jajniki",                     ID_GRUCZO40158
+            END
+        END
+        POPUP "Uk≥ad oddechowy"
+        BEGIN
+            POPUP "GÛrne Drogi oddechowe"
+            BEGIN
+                MENUITEM "Jama nosowa",                 ID_G40159
+                MENUITEM "Gard≥o",                      ID_G40160
+            END
+            POPUP "Dolne Drogi oddechowe"
+            BEGIN
+                MENUITEM "KrtaÒ",                       ID_DOLNEDROGIODDECHOWE_KRTA40161
+                MENUITEM "Tchawica",                    ID_DOLNEDROGIODDECHOWE_TCHAWICA
+                MENUITEM "Oskrzela",                    ID_DOLNEDROGIODDECHOWE_OSKRZELA
+            END
+        END
+        POPUP "Uk≥ad moczowo-p≥ciowy"
+        BEGIN
+            POPUP "Uk≥ad moczowy"
+            BEGIN
+                MENUITEM "Nerki",                       ID_UK40164
+                MENUITEM "MoczowÛd",                    ID_UK40165
+                MENUITEM "PÍcherz moczowy",             ID_UK40166
+                MENUITEM "Cewka moczowa",               ID_UK40167
+            END
+            POPUP "Uk≥ad p≥ciowy"
+            BEGIN
+                POPUP "ØeÒski uk≥ad p≥ciowy"
+                BEGIN
+                    POPUP "WewnÍtrzne"
+                    BEGIN
+                        MENUITEM "Jajowody",                    ID_WEWN40202
+                        MENUITEM "Jajniki",                     ID_WEWN40203
+                        MENUITEM "Macica",                      ID_WEWN40204
+                        MENUITEM "Pochwa",                      ID_WEWN40205
+                    END
+                    POPUP "ZewnÍtrzne"
+                    BEGIN
+                        MENUITEM "WzgÛrek ≥onowy",              ID_ZEWN40206
+                        MENUITEM "Wargi sromowe wiÍksze",       ID_ZEWN40207
+                        MENUITEM "Wargi sromowe mniejsze",      ID_ZEWN40208
+                        MENUITEM "Spoiwo przednie warg sromowych", ID_ZEWN40209
+                        MENUITEM "Spoiwo tylne warg sromowych", ID_ZEWN40210
+                        MENUITEM "WÍdzide≥ko warg sromowych",   ID_ZEWN40211
+                        MENUITEM "Przedsionek pochwy",          ID_ZEWN40212
+                        MENUITEM "DÛ≥ ≥Ûdeczkowaty przedsionka pochwy", ID_ZEWN40213
+                        MENUITEM "Wejúcie do pochwy",           ID_ZEWN40214
+                        MENUITEM "£echtaczka",                  ID_ZEWN40215
+                        MENUITEM "WÍdzide≥ko ≥echtaczki",       ID_ZEWN40216
+                        MENUITEM "Napletek ≥echtaczki",         ID_ZEWN40217
+                        MENUITEM "Gruczo≥y przedsionkowe wiÍksze", ID_ZEWN40218
+                        MENUITEM "Gruczo≥y przedsionkowe mniejsze", ID_ZEWN40219
+                        MENUITEM "Ujúcie zewnÍtrzne cewki moczowej", ID_ZEWN40220
+                        MENUITEM "Opuszki przedsionka",         ID_ZEWN40221
+                        MENUITEM "Spoiwo tylne warg sromowych", ID_ZEWN40222
+                        MENUITEM "WÍdzide≥ko tylne",            ID_ZEWN40223
+                        MENUITEM "DÛ≥ ≥Ûdeczkowaty przedsionka pochwy", ID_ZEWN40224
+                        MENUITEM "Gruczo≥y sutkowe",            ID_ZEWN40225
+                    END
+                END
+                POPUP "MÍski uk≥ad p≥ciowy"
+                BEGIN
+                    POPUP "WewnÍtrzne"
+                    BEGIN
+                        MENUITEM "Jπdra",                       ID_WEWN40179
+                        MENUITEM "Najπdrze",                    ID_WEWN40180
+                        MENUITEM "NasieniowÛd",                 ID_WEWN40181
+                        MENUITEM "Cewka moczowa mÍska",         ID_WEWN40182
+                        POPUP "Gruczo≥y"
+                        BEGIN
+                            MENUITEM "PÍcherzykowo-nasienne",       ID_GRUCZO40187
+                            MENUITEM "Krokowy",                     ID_GRUCZO40188
+                            MENUITEM "Opuszkowo-cewkowe",           ID_GRUCZO40189
+                        END
+                        MENUITEM "PrzewÛd wytryskowy",          ID_WEWN40184
+                    END
+                    POPUP "ZewnÍtrzne"
+                    BEGIN
+                        MENUITEM "Moszna",                      ID_ZEWN40185
+                        MENUITEM "Prπcie",                      ID_ZEWN40186
+                    END
+                END
+            END
+        END
+        POPUP "Uk≥ad krwionoúny"
+        BEGIN
+            POPUP "Krwioobieg duøy"
+            BEGIN
+                MENUITEM "Aorta",                       ID_KRWIOOBIEGDU40190
+                MENUITEM "TÍtnice mniejsze",            ID_KRWIOOBIEGDU40191
+                MENUITEM "TÍtniczki",                   ID_KRWIOOBIEGDU40192
+                MENUITEM "Naczynia w≥osowate",          ID_KRWIOOBIEGDU40193
+            END
+            POPUP "Krwioobieg ma≥y"
+            BEGIN
+                POPUP "TÍtnice p≥ucne"
+                BEGIN
+                    MENUITEM "Lewa",                        ID_T40195
+                    MENUITEM "Prawa",                       ID_T40196
+                END
+                MENUITEM "Naczynia w≥osowate",          ID_KRWIOOBIEGMA40197
+                MENUITEM "Øy≥y",                        ID_KRWIOOBIEGMA40198
+            END
+            MENUITEM "Serce",                       ID_UK40199
+        END
+        POPUP "Uk≥ad limfatyczny"
+        BEGIN
+            POPUP "Narzπdy centralne"
+            BEGIN
+                MENUITEM "Grasica",                     ID_NARZ40226
+                MENUITEM "Szpik kostny",                ID_NARZ40227
+                MENUITEM "Kaletka Fabrycjusza",         ID_NARZ40228
+            END
+            POPUP "Narzπdy obwodowe"
+            BEGIN
+                MENUITEM "WÍz≥y ch≥onne",               ID_NARZ40229
+                MENUITEM "Grudki ch≥onne",              ID_NARZ40230
+                MENUITEM "Migda≥ki podniebienne",       ID_NARZ40231
+                MENUITEM "Wyrostek robaczkowy",         ID_NARZ40232
+                MENUITEM "åledziona",                   ID_NARZ40233
+            END
+        END
+        POPUP "Pow≥oka wspÛlna"
+        BEGIN
+            POPUP "Uk≥ad narzπdÛw os≥onowych"
+            BEGIN
+                POPUP "SkÛra"
+                BEGIN
+                    POPUP "NaskÛrek"
+                    BEGIN
+                        MENUITEM "Warstwa rogowa",              ID_NASK40238
+                        MENUITEM "Warstwa jasna",               ID_NASK40239
+                        MENUITEM "Warstwa ziarnista",           ID_NASK40240
+                        MENUITEM "Warstwa kolczysta",           ID_NASK40241
+                        MENUITEM "Warstwa podstawna",           ID_NASK40242
+                    END
+                    POPUP "SkÛra w≥aúciwa"
+                    BEGIN
+                        MENUITEM "Receptory",                   ID_SK40243
+                        MENUITEM "Tkanka ≥πczna",               ID_SK40244
+                        MENUITEM "Naczynia krwionoúne",         ID_SK40245
+                        POPUP "Gruczo≥y"
+                        BEGIN
+                            MENUITEM "Potowe",                      ID_GRUCZO40253
+                            MENUITEM "£ojowe",                      ID_GRUCZO40254
+                            MENUITEM "Sutkowe",                     ID_GRUCZO40255
+                            MENUITEM "Mlekowe",                     ID_GRUCZO40257
+                        END
+                        MENUITEM "Korzenie w≥osÛw",             ID_SK40247
+                    END
+                    POPUP "Tkanka podskÛrna"
+                    BEGIN
+                        MENUITEM "Tkanka ≥πczna",               ID_TKANKAPODSK40248
+                        MENUITEM "KomÛrki t≥uszczowe",          ID_TKANKAPODSK40249
+                        MENUITEM "Dolne odcinki korzeni w≥osÛw", ID_TKANKAPODSK40250
+                        MENUITEM "CzÍsci wydzielnicze gruczo≥Ûw", ID_TKANKAPODSK40251
+                        MENUITEM "Receptory",                   ID_TKANKAPODSK40252
+                    END
+                END
+            END
+        END
+        POPUP "Narzπdy zmys≥Ûw"
+        BEGIN
+            POPUP "Zmys≥y tradycyjne"
+            BEGIN
+                POPUP "Wzrok"
+                BEGIN
+                    POPUP "Oko"
+                    BEGIN
+                        MENUITEM "TwardÛwka",                   ID_OKO_TWARD40269
+                        MENUITEM "NaczyniÛwka",                 ID_OKO_NACZYNI40270
+                        MENUITEM "Kana≥ Schlemma",              ID_OKO_KANA40271
+                        MENUITEM "Wyrostek rzÍskowy",           ID_OKO_WYROSTEKRZ40272
+                        MENUITEM "RogÛwka",                     ID_OKO_ROG40273
+                        MENUITEM "TÍczÛwka",                    ID_OKO_T40274
+                        MENUITEM "èrenica",                     ID_OKO_40275
+                        MENUITEM "Komora przednia oka",         ID_OKO_KOMORAPRZEDNIAOKA
+                        MENUITEM "Komora tylnia oka",           ID_OKO_KOMORATYLNIAOKA
+                        MENUITEM "Cia≥o rzÍskowe",              ID_OKO_CIA40278
+                        MENUITEM "Soczewka",                    ID_OKO_SOCZEWKA
+                        MENUITEM "Cia≥o szkliste",              ID_OKO_CIA40280
+                        MENUITEM "Nerw wzrokowy",               ID_OKO_NERWWZROKOWY
+                        MENUITEM "WiÍzade≥ko rzÍskowe",         ID_OKO_WI40282
+                    END
+                END
+                POPUP "S≥uch"
+                BEGIN
+                    POPUP "Ucho"
+                    BEGIN
+                        POPUP "ZewnÍtrzne"
+                        BEGIN
+                            MENUITEM "Ma≥øowina uszna",             ID_ZEWN40287
+                            MENUITEM "PrzewÛd s≥uchowy zewnÍtrzny", ID_ZEWN40288
+                            MENUITEM "Powierzchnia zewnÍtrzna b≥ony bÍbenkowej", ID_ZEWN40289
+                        END
+                        POPUP "WewnÍtrzne"
+                        BEGIN
+                            MENUITEM "ålimak",                      ID_WEWN40298
+                            MENUITEM "Trzy kana≥y pÛ≥koliste",      ID_WEWN40299
+                            MENUITEM "Nerw s≥uchowy",               ID_WEWN40300
+                        END
+                        POPUP "årodkowe"
+                        BEGIN
+                            MENUITEM "B≥ona bÍbenkowa",             ID_40290
+                            MENUITEM "Jama bÍbenkowa",              ID_40291
+                            POPUP "Kosteczki s≥uchowe"
+                            BEGIN
+                                MENUITEM "M≥oteczek",                   ID_KOSTECZKIS40293
+                                MENUITEM "Kowade≥ko",                   ID_KOSTECZKIS40294
+                                MENUITEM "Strzemiπczko",                ID_KOSTECZKIS40295
+                            END
+                            MENUITEM "Trπbka Eustachiusza",         ID_40296
+                            MENUITEM "Powierzchnia zewnÍtrzna okienka owalnego", ID_40297
+                        END
+                    END
+                END
+                POPUP "Smak"
+                BEGIN
+                    POPUP "Jama ustna"
+                    BEGIN
+                        MENUITEM "Kubki smakowe",               ID_JAMAUSTNA_KUBKISMAKOWE
+                    END
+                END
+                POPUP "WÍch"
+                BEGIN
+                    MENUITEM "WÍchomÛzgowie",               ID_W40303
+                    MENUITEM "Nos",                         ID_W40304
+                END
+                POPUP "Dotyk"
+                BEGIN
+                    POPUP "Receptory"
+                    BEGIN
+                        POPUP "Narzπdy czucia powierzchniowego"
+                        BEGIN
+                            MENUITEM "Wargi",                       ID_NARZ40308
+                            MENUITEM "Opuszki palcÛw",              ID_NARZ40309
+                            MENUITEM "Podeszwy stÛp",               ID_NARZ40310
+                            MENUITEM "SkÛra grzbietu",              ID_NARZ40311
+                            MENUITEM "SkÛra ≥okci",                 ID_NARZ40312
+                        END
+                        POPUP "Narzπdy czucia g≥Íbokiego"
+                        BEGIN
+                            MENUITEM "MiÍúnie",                     ID_NARZ40313
+                            MENUITEM "Stawy",                       ID_NARZ40314
+                            MENUITEM "WiÍzad≥a",                    ID_NARZ40315
+                        END
+                    END
+                END
+            END
+            POPUP "Zmys≥y ""nowe"""
+            BEGIN
+                POPUP "Nocycepcja"
+                BEGIN
+                    MENUITEM "Receptory",                   ID_NOCYCEPCJA_RECEPTORY
+                END
+                POPUP "Zmys≥ temperatury"
+                BEGIN
+                    MENUITEM "SkÛra",                       ID_ZMYS40317
+                END
+                POPUP "Zmys≥ rÛwnowagi"
+                BEGIN
+                    MENUITEM "B≥Ídnik",                     ID_ZMYS40318
+                END
+                POPUP "Propriocepcja"
+                BEGIN
+                    MENUITEM "MiÍúnie",                     ID_PROPRIOCEPCJA_MI40319
+                    MENUITEM "åciÍgna",                     ID_PROPRIOCEPCJA_40320
+                    MENUITEM "Stawy",                       ID_PROPRIOCEPCJA_STAWY
+                END
+                POPUP "Percepcja czasu"
+                BEGIN
+                    MENUITEM "MÛzg",                        ID_PERCEPCJACZASU_M40322
+                END
+            END
+        END
+        POPUP "Uk≥ad miÍúniowy"
+        BEGIN
+            POPUP "MiÍúnie g≥owy"
+            BEGIN
+                MENUITEM "MiÍúnie mimiczne",            ID_MI40330
+                MENUITEM "MiÍúnie poruszajπce øuchwπ",  ID_MI40331
+                MENUITEM "MiÍúnie ga≥ki ocznej",        ID_MI40332
+                MENUITEM "MiÍúnie jÍzyka",              ID_MI40333
+                MENUITEM "MiÍúnie ucha",                ID_MI40334
+            END
+            POPUP "MiÍúnie tu≥owia i brzucha"
+            BEGIN
+                MENUITEM "MiÍúnieÒ prostu brzucha",     ID_MI40335
+                MENUITEM "MiÍúnieÒ skoúny zewnÍtrzny brzucha", ID_MI40336
+                MENUITEM "MiÍúnieÒ skoúny wewnÍtrzny brzucha", ID_MI40337
+                MENUITEM "MiÍúnieÒ poprzeczny brzucha", ID_MI40338
+                MENUITEM "MiÍúnieÒ piramidowy",         ID_MI40339
+                MENUITEM "MiÍúnieÒ czworoboczny lÍdüwi", ID_MI40340
+                MENUITEM "MiÍúnie MiÍdzypoprzeczne",    ID_MI40341
+            END
+            POPUP "MiÍúnie koÒczyny gÛrnej"
+            BEGIN
+                MENUITEM "MiÍúnie obrÍczy koÒczyny gÛrnej", ID_MI40342
+                MENUITEM "MiÍúnie ramienia",            ID_MI40343
+                MENUITEM "MiÍúnie przedramienia",       ID_MI40344
+                MENUITEM "MiÍúnie rÍki",                ID_MI40345
+            END
+            POPUP "Mieúnie koÒczyny dolnej"
+            BEGIN
+                MENUITEM "MiÍúnie obrÍczy koÒczyny dolnej", ID_MIE40346
+                MENUITEM "MiÍúnie uda",                 ID_MIE40347
+                MENUITEM "MiÍúnie goleni",              ID_MIE40348
+                MENUITEM "MiÍúnie stopy",               ID_MIE40349
+            END
+            POPUP "MiÍúnie klatki piersiowej"
+            BEGIN
+                MENUITEM "MiÍúnie powierzchniowe klatki piersiowej", ID_MI40350
+                MENUITEM "MiÍúnie g≥Íbokie klatki piersiowej", ID_MI40351
+                MENUITEM "Przepona",                    ID_MI40352
+            END
+            POPUP "MiÍúnie grzbietu"
+            BEGIN
+                POPUP "MiÍúnie grzbietu powierzchowne"
+                BEGIN
+                    POPUP "MiÍúnie kolcowo-ramienne"
+                    BEGIN
+                        MENUITEM "MiÍúnieÒ czworoboczny",       ID_MI40358
+                        MENUITEM "MiÍúnieÒ najszerszy grzbietu", ID_MI40359
+                        MENUITEM "MiÍúnieÒ rÛwnoleg≥oboczny",   ID_MI40360
+                        MENUITEM "MiÍúnieÒ düwigacz ≥opatki",   ID_MI40361
+                    END
+                    POPUP "MiÍúnie kolcowo-øebrowe"
+                    BEGIN
+                        MENUITEM "MiÍúnieÒ zÍbaty tylny gÛrny", ID_MI40362
+                        MENUITEM "MiÍúnieÒ zÍbaty tylny dolny", ID_MI40363
+                    END
+                END
+                POPUP "MiÍúnie grzbietu g≥Íbokie"
+                BEGIN
+                    POPUP "Pasmo przyúrodkowe"
+                    BEGIN
+                        MENUITEM "MiÍúnieÒ pÛ≥kolcowy grzbietu i karku", ID_PASMOPRZY40367
+                        MENUITEM "MiÍúnieÒ pÛ≥kolcowy g≥owy",   ID_PASMOPRZY40368
+                        MENUITEM "MiÍúnieÒ wielodzielny",       ID_PASMOPRZY40369
+                        MENUITEM "SkrÍcajπce krÍgos≥upa",       ID_PASMOPRZY40370
+                        MENUITEM "MiÍúnieÒ kolcowy grzbietu",   ID_PASMOPRZY40371
+                        MENUITEM "MiÍúnieÒ kolcowy karku",      ID_PASMOPRZY40372
+                        MENUITEM "MiÍúnieÒ kolcowy g≥owy",      ID_PASMOPRZY40373
+                        MENUITEM "MiÍdzykolcowe",               ID_PASMOPRZY40374
+                    END
+                    POPUP "Pasmo boczne"
+                    BEGIN
+                        MENUITEM "MiÍúnieÒ p≥atowaty g≥owy",    ID_PASMOBOCZNE_MI40375
+                        MENUITEM "MiÍúnieÒ krzyøowo-grzbietowy", ID_PASMOBOCZNE_MI40376
+                        POPUP "MiÍúnie biodrowo-øebrowe"
+                        BEGIN
+                            MENUITEM "LÍdüwi",                      ID_MI40378
+                            MENUITEM "Grzbietu",                    ID_MI40379
+                            MENUITEM "Szyi",                        ID_MI40380
+                        END
+                        POPUP "MiÍúnie najd≥uøsze"
+                        BEGIN
+                            MENUITEM "LÍdüwi",                      ID_MI40382
+                            MENUITEM "Grzbietu",                    ID_MI40383
+                            MENUITEM "Szyi",                        ID_MI40384
+                            MENUITEM "G≥owy",                       ID_MI40385
+                        END
+                        MENUITEM "MiÍdzypoprzeczne",            ID_PASMOBOCZNE_MI40386
+                    END
+                    POPUP "MiÍúnie podpotyliczne"
+                    BEGIN
+                        MENUITEM "MiÍúnieÒ skoúny g≥owy gÛrny", ID_MI40387
+                        POPUP "MiÍúnie proste g≥owy"
+                        BEGIN
+                            MENUITEM "Mniejszy",                    ID_MI40389
+                            MENUITEM "WiÍkszy",                     ID_MI40390
+                        END
+                        MENUITEM "MiÍúnieÒ skoúny g≥owy dolny", ID_MI40391
+                        MENUITEM "MiÍúnieÒ prosty g≥owy boczny", ID_MI40392
+                    END
+                END
+                POPUP "PowiÍzie grzbietu"
+                BEGIN
+                    MENUITEM "PowiÍü powierzchniowa grzbietu", ID_POWI40393
+                    MENUITEM "PowiÍü piersiowo-lÍdüwiowa",  ID_POWI40394
+                    MENUITEM "PowiÍü karku",                ID_POWI40395
+                END
+            END
+        END
+    END
+    POPUP "UbiÛr"
+    BEGIN
+        POPUP "G≥owa"
+        BEGIN
+            POPUP "Szyszak"
+            BEGIN
+                MENUITEM "Stalowy",                     ID_SZYSZAK_STALOWY
+                MENUITEM "SkÛrzany",                    ID_SZYSZAK_SK40447
+            END
+            MENUITEM "Czepiec",                     ID_G40445
+        END
+        POPUP "Twarz"
+        BEGIN
+            MENUITEM "Brak maski",                  ID_TWARZ_BRAKMASKI
+            POPUP "Maska"
+            BEGIN
+                MENUITEM "Maska Scream",                ID_MASKA_MASKASCREAM
+                MENUITEM "Maska Guy'a Fawkes'a",        ID_MASKA_MASKAGUY
+                MENUITEM "Maska z w≥asnπ twarzπ",       ID_MASKA_MASKAZW40452
+            END
+        END
+        POPUP "Szyja"
+        BEGIN
+            MENUITEM "Pusty",                       ID_SZYJA_PUSTY
+            MENUITEM "£aÒcuchy do opon",            ID_SZYJA_40454
+        END
+        POPUP "Tu≥Ûw"
+        BEGIN
+            MENUITEM "Zdecydowanie za ma≥a rÛøowa koszulka", ID_TU40455
+        END
+        POPUP "Spodnie"
+        BEGIN
+            POPUP "Czarne"
+            BEGIN
+                POPUP "Obcis≥e"
+                BEGIN
+                    MENUITEM "Za ma≥e",                     ID_OBCIS40458
+                END
+            END
+        END
+        POPUP "Buty"
+        BEGIN
+            POPUP "Pe≥ne"
+            BEGIN
+                MENUITEM "Worki po kartoflach",         ID_PE40461
+            END
+            POPUP "Niepe≥ne"
+            BEGIN
+                MENUITEM "Dziurawe worki po kartoflach", ID_NIEPE40462
+            END
+        END
+        POPUP "Dodatki"
+        BEGIN
+            POPUP "Pasek"
+            BEGIN
+                POPUP "∆wiekowany"
+                BEGIN
+                    POPUP "SkÛrzany"
+                    BEGIN
+                        MENUITEM "Czerwony",                    ID_SK40466
+                    END
+                END
+            END
+        END
+    END
+END
+
+IDR_MENU3 MENU
+BEGIN
+    POPUP "Aparycja"
+    BEGIN
+        POPUP "Budowa cia≥a"
+        BEGIN
+            POPUP "Nieduøa"
+            BEGIN
+                POPUP "Chudy"
+                BEGIN
+                    POPUP "Cienki"
+                    BEGIN
+                        MENUITEM "Szczaw",                      ID_CIENKI_SZCZAW
+                    END
+                END
+            END
+        END
+        POPUP "W≥osy"
+        BEGIN
+            POPUP "Rozczochrane"
+            BEGIN
+                MENUITEM "Czarne",                      ID_ROZCZOCHRANE_CZARNE
+                MENUITEM "Szare",                       ID_ROZCZOCHRANE_SZARE
+            END
+            POPUP "Proste"
+            BEGIN
+                MENUITEM "Czarne",                      ID_PROSTE_CZARNE
+                MENUITEM "Szare",                       ID_PROSTE_SZARE
+            END
+            POPUP "KrÍcone"
+            BEGIN
+                MENUITEM "Czarne",                      ID_KR40478
+                MENUITEM "Szare",                       ID_KR40479
+            END
+        END
+        POPUP "Wzrost"
+        BEGIN
+            POPUP "Niewielki"
+            BEGIN
+                POPUP "Niedowzrost"
+                BEGIN
+                    POPUP "Kurdupel"
+                    BEGIN
+                        MENUITEM "Karze≥",                      ID_KURDUPEL_KARZE40489
+                    END
+                END
+            END
+        END
+    END
+    POPUP "Uzbrojenie"
+    BEGIN
+        POPUP "BroÒ rÍczna"
+        BEGIN
+            POPUP "JednorÍczna"
+            BEGIN
+                MENUITEM "Miecz",                       ID_JEDNOR40423
+                MENUITEM "Bu≥awa",                      ID_JEDNOR40424
+                MENUITEM "Pa≥ka",                       ID_JEDNOR40425
+                MENUITEM "Ma≥y kamieÒ",                 ID_JEDNOR40426
+            END
+            POPUP "DwurÍczna"
+            BEGIN
+                MENUITEM "Miecz DwurÍczny",             ID_DWUR40427
+                MENUITEM "TopÛr bojowy",                ID_DWUR40428
+                MENUITEM "Bu≥awa dwurÍczna",            ID_DWUR40429
+                MENUITEM "Wielki kamieÒ",               ID_DWUR40430
+                MENUITEM "Kompan",                      ID_DWUR40431
+            END
+        END
+        POPUP "BroÒ palna"
+        BEGIN
+            POPUP "BroÒ krÛtka"
+            BEGIN
+                MENUITEM "M1911",                       ID_BRO40490
+                MENUITEM "Glock-17",                    ID_BRO40491
+            END
+            POPUP "BroÒ d≥uga"
+            BEGIN
+                MENUITEM "M16",                         ID_BRO40492
+                MENUITEM "M4-A1",                       ID_BRO40493
+            END
+            POPUP "BroÒ laserowa"
+            BEGIN
+                MENUITEM "Wskaünik Laserowy",           ID_BRO40494
+                MENUITEM "Lupa",                        ID_BRO40495
+            END
+        END
+        POPUP "Walka wrÍcz"
+        BEGIN
+            MENUITEM "PiÍúci",                      ID_WALKAWR40432
+            MENUITEM "Kastet",                      ID_WALKAWR40433
+        END
+    END
+    POPUP "Brakujπce organy"
+    BEGIN
+        POPUP "Uk≥ad szkieletowy"
+        BEGIN
+            POPUP "Koúci d≥ugie"
+            BEGIN
+                MENUITEM "KoúÊ ramienna",               ID_KO40035
+                MENUITEM "KoúÊ ≥okciowa",               ID_KO40036
+                MENUITEM "KoúÊ promieniowa",            ID_KO40037
+                MENUITEM "KoúÊ udowa",                  ID_KO40038
+                MENUITEM "KoúÊ piszczelowa",            ID_KO40039
+                MENUITEM "KoúÊ strza≥kowa",             ID_KO40040
+            END
+            POPUP "Koúci p≥askie"
+            BEGIN
+                MENUITEM "Sklepienie mÛzgoczaszki",     ID_KO40041
+                MENUITEM "Mostek",                      ID_KO40042
+                MENUITEM "KoúÊ biodrowa",               ID_KO40043
+                MENUITEM "£opatka",                     ID_KO40044
+            END
+            POPUP "Koúci krÛtkie"
+            BEGIN
+                POPUP "Koúci nadgarstka"
+                BEGIN
+                    MENUITEM "KoúÊ ≥Ûdeczkowata",           ID_KO40056
+                    MENUITEM "KoúÊ ksiÍøycowata",           ID_KO40057
+                    MENUITEM "KoúÊ trÛjgraniasta",          ID_KO40058
+                    MENUITEM "KoúÊ grochowata",             ID_KO40059
+                    MENUITEM "KoúÊ czworoboczna wiÍksza",   ID_KO40060
+                    MENUITEM "KoúÊ czworoboczna mniejsza",  ID_KO40061
+                    MENUITEM "KoúÊ g≥Ûwkowata",             ID_KO40062
+                    MENUITEM "KoúÊ haczykowata",            ID_KO40063
+                END
+                POPUP "Koúci stÍpu"
+                BEGIN
+                    MENUITEM "KoúÊ skokowa",                ID_KO40047
+                    MENUITEM "KoúÊ ≥Ûdkowata",              ID_KO40048
+                    MENUITEM "KoúÊ piÍtowa z guzem piÍtowym", ID_KO40049
+                    MENUITEM "KoúÊ szeúcienna",             ID_KO40050
+                    POPUP "KoúÊ klinowata"
+                    BEGIN
+                        MENUITEM "Przyúrodkowa",                ID_KO40052
+                        MENUITEM "Poúrodkowa",                  ID_KO40053
+                        MENUITEM "Boczna",                      ID_KO40054
+                    END
+                END
+                MENUITEM "Trzeszczka",                  ID_KO40055
+            END
+            POPUP "Koúci pneumatyczne"
+            BEGIN
+                MENUITEM "KoúÊ klinowa",                ID_KO40064
+                MENUITEM "KoúÊ czo≥owa",                ID_KO40065
+                MENUITEM "KoúÊ sitowa",                 ID_KO40066
+                MENUITEM "KoúÊ skroniowa",              ID_KO40067
+                MENUITEM "SzczÍka",                     ID_KO40068
+            END
+            POPUP "Koúci rÛønokszta≥tne"
+            BEGIN
+                MENUITEM "Øuchwa",                      ID_KO40069
+                MENUITEM "Rzepka",                      ID_KO40070
+                MENUITEM "Koúci podniebne",             ID_KO40071
+                POPUP "Kosteczki s≥uchowe"
+                BEGIN
+                    MENUITEM "M≥oteczek",                   ID_KOSTECZKIS40074
+                    MENUITEM "Kowade≥ko",                   ID_KOSTECZKIS40075
+                    MENUITEM "Strzemiπczko",                ID_KOSTECZKIS40076
+                END
+                POPUP "KrÍgi"
+                BEGIN
+                    MENUITEM "Beztrzonowe",                 ID_KR40077
+                    MENUITEM "Pe≥nocz≥onowe",               ID_KR40078
+                    MENUITEM "DwuwklÍs≥e",                  ID_KR40079
+                    MENUITEM "Ty≥owklÍs≥e",                 ID_KR40080
+                    MENUITEM "PrzodowklÍs≥e",               ID_KR40081
+                    MENUITEM "Siode≥kowate",                ID_KR40082
+                    MENUITEM "P≥askie",                     ID_KR40083
+                END
+            END
+        END
+        POPUP "Uk≥ad pokarmowy"
+        BEGIN
+            POPUP "PrzewÛd pokarmowy"
+            BEGIN
+                MENUITEM "Jama ustna",                  ID_PRZEW40084
+                MENUITEM "Gard≥o",                      ID_PRZEW40085
+                MENUITEM "Prze≥yk",                     ID_PRZEW40086
+                MENUITEM "Øo≥πdek",                     ID_PRZEW40087
+                MENUITEM "Jelito cienkie",              ID_PRZEW40088
+                MENUITEM "Jelito grube",                ID_PRZEW40089
+            END
+            POPUP "Gruczo≥y"
+            BEGIN
+                MENUITEM "Wπtroba",                     ID_GRUCZO40090
+                MENUITEM "Trzustka",                    ID_GRUCZO40091
+                MENUITEM "ålinianki",                   ID_GRUCZO40092
+            END
+        END
+        POPUP "Uk≥ad nerwowy"
+        BEGIN
+            POPUP "Uk≥ad nerwowy somatyczny"
+            BEGIN
+                POPUP "Uk≥ad piramidowy"
+                BEGIN
+                    MENUITEM "Droga korowo-jπdrowa",        ID_UK40095
+                    MENUITEM "Droga korowo-rdzeniowa",      ID_UK40096
+                END
+                POPUP "Uk≥ad pozapiramidowy"
+                BEGIN
+                    POPUP "Sk≥adowe anatomiczne"
+                    BEGIN
+                        MENUITEM "Prπøkowie",                   ID_SK40098
+                        MENUITEM "Ga≥ka blada",                 ID_SK40099
+                        MENUITEM "Jπdro niskowzgÛrzowe",        ID_SK40100
+                        MENUITEM "Jπdra wzgÛrza",               ID_SK40101
+                        MENUITEM "Istota czarna",               ID_SK40102
+                        MENUITEM "Jπdro czerwienne",            ID_SK40103
+                        MENUITEM "Jπdro niskowzgÛrzowe Luysa",  ID_SK40104
+                        MENUITEM "Jπdro konarowo-mostkowe",     ID_SK40105
+                        MENUITEM "Kora okolicy przedruchowej p≥ata czo≥owego w 6 i 8 polach Brodmana", ID_SK40106
+                    END
+                END
+            END
+            POPUP "Uk≥ad nerwowy autonomiczny"
+            BEGIN
+                POPUP "Uk≥ad wspÛ≥czulny"
+                BEGIN
+                    POPUP "Zwoje"
+                    BEGIN
+                        POPUP "CzÍúÊ g≥owowa"
+                        BEGIN
+                            MENUITEM "ZwÛj rzÍskowy",               ID_CZ40117
+                        END
+                        POPUP "PieÒ wspÛ≥czulny"
+                        BEGIN
+                            POPUP "CzÍúÊ szyjna"
+                            BEGIN
+                                MENUITEM "ZwÛj szyjny gÛrny",           ID_CZ40122
+                                MENUITEM "ZwÛj szyjny úrodkowy",        ID_CZ40123
+                                MENUITEM "ZwÛj krÍgowy",                ID_CZ40124
+                                MENUITEM "ZwÛj szyjny dolny",           ID_CZ40125
+                                MENUITEM "ZwÛj gwiaüdzisty",            ID_CZ40126
+                            END
+                            POPUP "CzÍúÊ piersiowa"
+                            BEGIN
+                                MENUITEM "Zwoje piersiowe",             ID_CZ40127
+                            END
+                            POPUP "CzÍúÊ brzuszna"
+                            BEGIN
+                                MENUITEM "Zwoje lÍdüwiowe",             ID_CZ40128
+                            END
+                            POPUP "CzÍúÊ miednicza"
+                            BEGIN
+                                MENUITEM "Zwoje krzyøowe",              ID_CZ40129
+                                MENUITEM "ZwÛj nieparzysty",            ID_CZ40130
+                            END
+                        END
+                    END
+                    POPUP "Nerwy"
+                    BEGIN
+                        POPUP "Trzewne"
+                        BEGIN
+                            POPUP "Nerwy trzewne piersiowe"
+                            BEGIN
+                                MENUITEM "Nerw trzewny wiÍkszy",        ID_NERWYTRZEWNEPIERSIOWE_NERWTRZEWNYWI40136
+                                MENUITEM "Nerw trzewny mniejszy",       ID_NERWYTRZEWNEPIERSIOWE_NERWTRZEWNYMNIEJSZY
+                                MENUITEM "Nerw trzewny najniøszy",      ID_NERWYTRZEWNEPIERSIOWE_NERWTRZEWNYNAJNI40138
+                            END
+                            MENUITEM "Nerwy trzewne lÍdüwiowe",     ID_TRZEWNE_NERWYTRZEWNEL40134
+                            MENUITEM "Nerwy trzewne krzyøowe",      ID_TRZEWNE_NERWYTRZEWNEKRZY40135
+                        END
+                        POPUP "Naczyniowe"
+                        BEGIN
+                            MENUITEM "KrÛtkie nerwy rzÍskowe",      ID_NACZYNIOWE_KR40139
+                            MENUITEM "Nerwy sercowe",               ID_NACZYNIOWE_NERWYSERCOWE
+                        END
+                    END
+                    POPUP "Sploty"
+                    BEGIN
+                        MENUITEM "Splot szyjno-tÍtniczy wewnÍtrzny", ID_SPLOTY_SPLOTSZYJNO
+                        MENUITEM "Splot sercowy",               ID_SPLOTY_SPLOTSERCOWY
+                        MENUITEM "Splot prze≥ykowy",            ID_SPLOTY_SPLOTPRZE40143
+                        MENUITEM "Splot p≥ucny",                ID_SPLOTY_SPLOTP40144
+                        MENUITEM "Splot trzewny",               ID_SPLOTY_SPLOTTRZEWNY
+                        MENUITEM "Splot miÍdzykrezkowy",        ID_SPLOTY_SPLOTMI40146
+                        MENUITEM "Splot podbrzuszny gÛrny",     ID_SPLOTY_SPLOTPODBRZUSZNYG40147
+                        MENUITEM "Splot podbrzuszny dolny",     ID_SPLOTY_SPLOTPODBRZUSZNYDOLNY
+                    END
+                END
+                MENUITEM "Uk≥ad przywspÛ≥czulny",       ID_UK40108
+            END
+        END
+        POPUP "Uk≥ad dokrewny"
+        BEGIN
+            POPUP "Gruczo≥y"
+            BEGIN
+                MENUITEM "PodwzgÛrze",                  ID_GRUCZO40149
+                MENUITEM "Przysadka mÛzgowa",           ID_GRUCZO40150
+                MENUITEM "Szyszynka",                   ID_GRUCZO40151
+                MENUITEM "Tarczyca",                    ID_GRUCZO40152
+                MENUITEM "Przytarczyce",                ID_GRUCZO40153
+                MENUITEM "Grasica",                     ID_GRUCZO40154
+                MENUITEM "Trzustka",                    ID_GRUCZO40155
+                MENUITEM "Nadnercza",                   ID_GRUCZO40156
+                MENUITEM "Jπdra",                       ID_GRUCZO40157
+                MENUITEM "Jajniki",                     ID_GRUCZO40158
+            END
+        END
+        POPUP "Uk≥ad oddechowy"
+        BEGIN
+            POPUP "GÛrne Drogi oddechowe"
+            BEGIN
+                MENUITEM "Jama nosowa",                 ID_G40159
+                MENUITEM "Gard≥o",                      ID_G40160
+            END
+            POPUP "Dolne Drogi oddechowe"
+            BEGIN
+                MENUITEM "KrtaÒ",                       ID_DOLNEDROGIODDECHOWE_KRTA40161
+                MENUITEM "Tchawica",                    ID_DOLNEDROGIODDECHOWE_TCHAWICA
+                MENUITEM "Oskrzela",                    ID_DOLNEDROGIODDECHOWE_OSKRZELA
+            END
+        END
+        POPUP "Uk≥ad moczowo-p≥ciowy"
+        BEGIN
+            POPUP "Uk≥ad moczowy"
+            BEGIN
+                MENUITEM "Nerki",                       ID_UK40164
+                MENUITEM "MoczowÛd",                    ID_UK40165
+                MENUITEM "PÍcherz moczowy",             ID_UK40166
+                MENUITEM "Cewka moczowa",               ID_UK40167
+            END
+            POPUP "Uk≥ad p≥ciowy"
+            BEGIN
+                POPUP "ØeÒski uk≥ad p≥ciowy"
+                BEGIN
+                    POPUP "WewnÍtrzne"
+                    BEGIN
+                        MENUITEM "Jajowody",                    ID_WEWN40202
+                        MENUITEM "Jajniki",                     ID_WEWN40203
+                        MENUITEM "Macica",                      ID_WEWN40204
+                        MENUITEM "Pochwa",                      ID_WEWN40205
+                    END
+                    POPUP "ZewnÍtrzne"
+                    BEGIN
+                        MENUITEM "WzgÛrek ≥onowy",              ID_ZEWN40206
+                        MENUITEM "Wargi sromowe wiÍksze",       ID_ZEWN40207
+                        MENUITEM "Wargi sromowe mniejsze",      ID_ZEWN40208
+                        MENUITEM "Spoiwo przednie warg sromowych", ID_ZEWN40209
+                        MENUITEM "Spoiwo tylne warg sromowych", ID_ZEWN40210
+                        MENUITEM "WÍdzide≥ko warg sromowych",   ID_ZEWN40211
+                        MENUITEM "Przedsionek pochwy",          ID_ZEWN40212
+                        MENUITEM "DÛ≥ ≥Ûdeczkowaty przedsionka pochwy", ID_ZEWN40213
+                        MENUITEM "Wejúcie do pochwy",           ID_ZEWN40214
+                        MENUITEM "£echtaczka",                  ID_ZEWN40215
+                        MENUITEM "WÍdzide≥ko ≥echtaczki",       ID_ZEWN40216
+                        MENUITEM "Napletek ≥echtaczki",         ID_ZEWN40217
+                        MENUITEM "Gruczo≥y przedsionkowe wiÍksze", ID_ZEWN40218
+                        MENUITEM "Gruczo≥y przedsionkowe mniejsze", ID_ZEWN40219
+                        MENUITEM "Ujúcie zewnÍtrzne cewki moczowej", ID_ZEWN40220
+                        MENUITEM "Opuszki przedsionka",         ID_ZEWN40221
+                        MENUITEM "Spoiwo tylne warg sromowych", ID_ZEWN40222
+                        MENUITEM "WÍdzide≥ko tylne",            ID_ZEWN40223
+                        MENUITEM "DÛ≥ ≥Ûdeczkowaty przedsionka pochwy", ID_ZEWN40224
+                        MENUITEM "Gruczo≥y sutkowe",            ID_ZEWN40225
+                    END
+                END
+                POPUP "MÍski uk≥ad p≥ciowy"
+                BEGIN
+                    POPUP "WewnÍtrzne"
+                    BEGIN
+                        MENUITEM "Jπdra",                       ID_WEWN40179
+                        MENUITEM "Najπdrze",                    ID_WEWN40180
+                        MENUITEM "NasieniowÛd",                 ID_WEWN40181
+                        MENUITEM "Cewka moczowa mÍska",         ID_WEWN40182
+                        POPUP "Gruczo≥y"
+                        BEGIN
+                            MENUITEM "PÍcherzykowo-nasienne",       ID_GRUCZO40187
+                            MENUITEM "Krokowy",                     ID_GRUCZO40188
+                            MENUITEM "Opuszkowo-cewkowe",           ID_GRUCZO40189
+                        END
+                        MENUITEM "PrzewÛd wytryskowy",          ID_WEWN40184
+                    END
+                    POPUP "ZewnÍtrzne"
+                    BEGIN
+                        MENUITEM "Moszna",                      ID_ZEWN40185
+                        MENUITEM "Prπcie",                      ID_ZEWN40186
+                    END
+                END
+            END
+        END
+        POPUP "Uk≥ad krwionoúny"
+        BEGIN
+            POPUP "Krwioobieg duøy"
+            BEGIN
+                MENUITEM "Aorta",                       ID_KRWIOOBIEGDU40190
+                MENUITEM "TÍtnice mniejsze",            ID_KRWIOOBIEGDU40191
+                MENUITEM "TÍtniczki",                   ID_KRWIOOBIEGDU40192
+                MENUITEM "Naczynia w≥osowate",          ID_KRWIOOBIEGDU40193
+            END
+            POPUP "Krwioobieg ma≥y"
+            BEGIN
+                POPUP "TÍtnice p≥ucne"
+                BEGIN
+                    MENUITEM "Lewa",                        ID_T40195
+                    MENUITEM "Prawa",                       ID_T40196
+                END
+                MENUITEM "Naczynia w≥osowate",          ID_KRWIOOBIEGMA40197
+                MENUITEM "Øy≥y",                        ID_KRWIOOBIEGMA40198
+            END
+            MENUITEM "Serce",                       ID_UK40199
+        END
+        POPUP "Uk≥ad limfatyczny"
+        BEGIN
+            POPUP "Narzπdy centralne"
+            BEGIN
+                MENUITEM "Grasica",                     ID_NARZ40226
+                MENUITEM "Szpik kostny",                ID_NARZ40227
+                MENUITEM "Kaletka Fabrycjusza",         ID_NARZ40228
+            END
+            POPUP "Narzπdy obwodowe"
+            BEGIN
+                MENUITEM "WÍz≥y ch≥onne",               ID_NARZ40229
+                MENUITEM "Grudki ch≥onne",              ID_NARZ40230
+                MENUITEM "Migda≥ki podniebienne",       ID_NARZ40231
+                MENUITEM "Wyrostek robaczkowy",         ID_NARZ40232
+                MENUITEM "åledziona",                   ID_NARZ40233
+            END
+        END
+        POPUP "Pow≥oka wspÛlna"
+        BEGIN
+            POPUP "Uk≥ad narzπdÛw os≥onowych"
+            BEGIN
+                POPUP "SkÛra"
+                BEGIN
+                    POPUP "NaskÛrek"
+                    BEGIN
+                        MENUITEM "Warstwa rogowa",              ID_NASK40238
+                        MENUITEM "Warstwa jasna",               ID_NASK40239
+                        MENUITEM "Warstwa ziarnista",           ID_NASK40240
+                        MENUITEM "Warstwa kolczysta",           ID_NASK40241
+                        MENUITEM "Warstwa podstawna",           ID_NASK40242
+                    END
+                    POPUP "SkÛra w≥aúciwa"
+                    BEGIN
+                        MENUITEM "Receptory",                   ID_SK40243
+                        MENUITEM "Tkanka ≥πczna",               ID_SK40244
+                        MENUITEM "Naczynia krwionoúne",         ID_SK40245
+                        POPUP "Gruczo≥y"
+                        BEGIN
+                            MENUITEM "Potowe",                      ID_GRUCZO40253
+                            MENUITEM "£ojowe",                      ID_GRUCZO40254
+                            MENUITEM "Sutkowe",                     ID_GRUCZO40255
+                            MENUITEM "Mlekowe",                     ID_GRUCZO40257
+                        END
+                        MENUITEM "Korzenie w≥osÛw",             ID_SK40247
+                    END
+                    POPUP "Tkanka podskÛrna"
+                    BEGIN
+                        MENUITEM "Tkanka ≥πczna",               ID_TKANKAPODSK40248
+                        MENUITEM "KomÛrki t≥uszczowe",          ID_TKANKAPODSK40249
+                        MENUITEM "Dolne odcinki korzeni w≥osÛw", ID_TKANKAPODSK40250
+                        MENUITEM "CzÍsci wydzielnicze gruczo≥Ûw", ID_TKANKAPODSK40251
+                        MENUITEM "Receptory",                   ID_TKANKAPODSK40252
+                    END
+                END
+            END
+        END
+        POPUP "Narzπdy zmys≥Ûw"
+        BEGIN
+            POPUP "Zmys≥y tradycyjne"
+            BEGIN
+                POPUP "Wzrok"
+                BEGIN
+                    POPUP "Oko"
+                    BEGIN
+                        MENUITEM "TwardÛwka",                   ID_OKO_TWARD40269
+                        MENUITEM "NaczyniÛwka",                 ID_OKO_NACZYNI40270
+                        MENUITEM "Kana≥ Schlemma",              ID_OKO_KANA40271
+                        MENUITEM "Wyrostek rzÍskowy",           ID_OKO_WYROSTEKRZ40272
+                        MENUITEM "RogÛwka",                     ID_OKO_ROG40273
+                        MENUITEM "TÍczÛwka",                    ID_OKO_T40274
+                        MENUITEM "èrenica",                     ID_OKO_40275
+                        MENUITEM "Komora przednia oka",         ID_OKO_KOMORAPRZEDNIAOKA
+                        MENUITEM "Komora tylnia oka",           ID_OKO_KOMORATYLNIAOKA
+                        MENUITEM "Cia≥o rzÍskowe",              ID_OKO_CIA40278
+                        MENUITEM "Soczewka",                    ID_OKO_SOCZEWKA
+                        MENUITEM "Cia≥o szkliste",              ID_OKO_CIA40280
+                        MENUITEM "Nerw wzrokowy",               ID_OKO_NERWWZROKOWY
+                        MENUITEM "WiÍzade≥ko rzÍskowe",         ID_OKO_WI40282
+                    END
+                END
+                POPUP "S≥uch"
+                BEGIN
+                    POPUP "Ucho"
+                    BEGIN
+                        POPUP "ZewnÍtrzne"
+                        BEGIN
+                            MENUITEM "Ma≥øowina uszna",             ID_ZEWN40287
+                            MENUITEM "PrzewÛd s≥uchowy zewnÍtrzny", ID_ZEWN40288
+                            MENUITEM "Powierzchnia zewnÍtrzna b≥ony bÍbenkowej", ID_ZEWN40289
+                        END
+                        POPUP "WewnÍtrzne"
+                        BEGIN
+                            MENUITEM "ålimak",                      ID_WEWN40298
+                            MENUITEM "Trzy kana≥y pÛ≥koliste",      ID_WEWN40299
+                            MENUITEM "Nerw s≥uchowy",               ID_WEWN40300
+                        END
+                        POPUP "årodkowe"
+                        BEGIN
+                            MENUITEM "B≥ona bÍbenkowa",             ID_40290
+                            MENUITEM "Jama bÍbenkowa",              ID_40291
+                            POPUP "Kosteczki s≥uchowe"
+                            BEGIN
+                                MENUITEM "M≥oteczek",                   ID_KOSTECZKIS40293
+                                MENUITEM "Kowade≥ko",                   ID_KOSTECZKIS40294
+                                MENUITEM "Strzemiπczko",                ID_KOSTECZKIS40295
+                            END
+                            MENUITEM "Trπbka Eustachiusza",         ID_40296
+                            MENUITEM "Powierzchnia zewnÍtrzna okienka owalnego", ID_40297
+                        END
+                    END
+                END
+                POPUP "Smak"
+                BEGIN
+                    POPUP "Jama ustna"
+                    BEGIN
+                        MENUITEM "Kubki smakowe",               ID_JAMAUSTNA_KUBKISMAKOWE
+                    END
+                END
+                POPUP "WÍch"
+                BEGIN
+                    MENUITEM "WÍchomÛzgowie",               ID_W40303
+                    MENUITEM "Nos",                         ID_W40304
+                END
+                POPUP "Dotyk"
+                BEGIN
+                    POPUP "Receptory"
+                    BEGIN
+                        POPUP "Narzπdy czucia powierzchniowego"
+                        BEGIN
+                            MENUITEM "Wargi",                       ID_NARZ40308
+                            MENUITEM "Opuszki palcÛw",              ID_NARZ40309
+                            MENUITEM "Podeszwy stÛp",               ID_NARZ40310
+                            MENUITEM "SkÛra grzbietu",              ID_NARZ40311
+                            MENUITEM "SkÛra ≥okci",                 ID_NARZ40312
+                        END
+                        POPUP "Narzπdy czucia g≥Íbokiego"
+                        BEGIN
+                            MENUITEM "MiÍúnie",                     ID_NARZ40313
+                            MENUITEM "Stawy",                       ID_NARZ40314
+                            MENUITEM "WiÍzad≥a",                    ID_NARZ40315
+                        END
+                    END
+                END
+            END
+            POPUP "Zmys≥y ""nowe"""
+            BEGIN
+                POPUP "Nocycepcja"
+                BEGIN
+                    MENUITEM "Receptory",                   ID_NOCYCEPCJA_RECEPTORY
+                END
+                POPUP "Zmys≥ temperatury"
+                BEGIN
+                    MENUITEM "SkÛra",                       ID_ZMYS40317
+                END
+                POPUP "Zmys≥ rÛwnowagi"
+                BEGIN
+                    MENUITEM "B≥Ídnik",                     ID_ZMYS40318
+                END
+                POPUP "Propriocepcja"
+                BEGIN
+                    MENUITEM "MiÍúnie",                     ID_PROPRIOCEPCJA_MI40319
+                    MENUITEM "åciÍgna",                     ID_PROPRIOCEPCJA_40320
+                    MENUITEM "Stawy",                       ID_PROPRIOCEPCJA_STAWY
+                END
+                POPUP "Percepcja czasu"
+                BEGIN
+                    MENUITEM "MÛzg",                        ID_PERCEPCJACZASU_M40322
+                END
+            END
+        END
+        POPUP "Uk≥ad miÍúniowy"
+        BEGIN
+            POPUP "MiÍúnie g≥owy"
+            BEGIN
+                MENUITEM "MiÍúnie mimiczne",            ID_MI40330
+                MENUITEM "MiÍúnie poruszajπce øuchwπ",  ID_MI40331
+                MENUITEM "MiÍúnie ga≥ki ocznej",        ID_MI40332
+                MENUITEM "MiÍúnie jÍzyka",              ID_MI40333
+                MENUITEM "MiÍúnie ucha",                ID_MI40334
+            END
+            POPUP "MiÍúnie tu≥owia i brzucha"
+            BEGIN
+                MENUITEM "MiÍúnieÒ prostu brzucha",     ID_MI40335
+                MENUITEM "MiÍúnieÒ skoúny zewnÍtrzny brzucha", ID_MI40336
+                MENUITEM "MiÍúnieÒ skoúny wewnÍtrzny brzucha", ID_MI40337
+                MENUITEM "MiÍúnieÒ poprzeczny brzucha", ID_MI40338
+                MENUITEM "MiÍúnieÒ piramidowy",         ID_MI40339
+                MENUITEM "MiÍúnieÒ czworoboczny lÍdüwi", ID_MI40340
+                MENUITEM "MiÍúnie MiÍdzypoprzeczne",    ID_MI40341
+            END
+            POPUP "MiÍúnie koÒczyny gÛrnej"
+            BEGIN
+                MENUITEM "MiÍúnie obrÍczy koÒczyny gÛrnej", ID_MI40342
+                MENUITEM "MiÍúnie ramienia",            ID_MI40343
+                MENUITEM "MiÍúnie przedramienia",       ID_MI40344
+                MENUITEM "MiÍúnie rÍki",                ID_MI40345
+            END
+            POPUP "Mieúnie koÒczyny dolnej"
+            BEGIN
+                MENUITEM "MiÍúnie obrÍczy koÒczyny dolnej", ID_MIE40346
+                MENUITEM "MiÍúnie uda",                 ID_MIE40347
+                MENUITEM "MiÍúnie goleni",              ID_MIE40348
+                MENUITEM "MiÍúnie stopy",               ID_MIE40349
+            END
+            POPUP "MiÍúnie klatki piersiowej"
+            BEGIN
+                MENUITEM "MiÍúnie powierzchniowe klatki piersiowej", ID_MI40350
+                MENUITEM "MiÍúnie g≥Íbokie klatki piersiowej", ID_MI40351
+                MENUITEM "Przepona",                    ID_MI40352
+            END
+            POPUP "MiÍúnie grzbietu"
+            BEGIN
+                POPUP "MiÍúnie grzbietu powierzchowne"
+                BEGIN
+                    POPUP "MiÍúnie kolcowo-ramienne"
+                    BEGIN
+                        MENUITEM "MiÍúnieÒ czworoboczny",       ID_MI40358
+                        MENUITEM "MiÍúnieÒ najszerszy grzbietu", ID_MI40359
+                        MENUITEM "MiÍúnieÒ rÛwnoleg≥oboczny",   ID_MI40360
+                        MENUITEM "MiÍúnieÒ düwigacz ≥opatki",   ID_MI40361
+                    END
+                    POPUP "MiÍúnie kolcowo-øebrowe"
+                    BEGIN
+                        MENUITEM "MiÍúnieÒ zÍbaty tylny gÛrny", ID_MI40362
+                        MENUITEM "MiÍúnieÒ zÍbaty tylny dolny", ID_MI40363
+                    END
+                END
+                POPUP "MiÍúnie grzbietu g≥Íbokie"
+                BEGIN
+                    POPUP "Pasmo przyúrodkowe"
+                    BEGIN
+                        MENUITEM "MiÍúnieÒ pÛ≥kolcowy grzbietu i karku", ID_PASMOPRZY40367
+                        MENUITEM "MiÍúnieÒ pÛ≥kolcowy g≥owy",   ID_PASMOPRZY40368
+                        MENUITEM "MiÍúnieÒ wielodzielny",       ID_PASMOPRZY40369
+                        MENUITEM "SkrÍcajπce krÍgos≥upa",       ID_PASMOPRZY40370
+                        MENUITEM "MiÍúnieÒ kolcowy grzbietu",   ID_PASMOPRZY40371
+                        MENUITEM "MiÍúnieÒ kolcowy karku",      ID_PASMOPRZY40372
+                        MENUITEM "MiÍúnieÒ kolcowy g≥owy",      ID_PASMOPRZY40373
+                        MENUITEM "MiÍdzykolcowe",               ID_PASMOPRZY40374
+                    END
+                    POPUP "Pasmo boczne"
+                    BEGIN
+                        MENUITEM "MiÍúnieÒ p≥atowaty g≥owy",    ID_PASMOBOCZNE_MI40375
+                        MENUITEM "MiÍúnieÒ krzyøowo-grzbietowy", ID_PASMOBOCZNE_MI40376
+                        POPUP "MiÍúnie biodrowo-øebrowe"
+                        BEGIN
+                            MENUITEM "LÍdüwi",                      ID_MI40378
+                            MENUITEM "Grzbietu",                    ID_MI40379
+                            MENUITEM "Szyi",                        ID_MI40380
+                        END
+                        POPUP "MiÍúnie najd≥uøsze"
+                        BEGIN
+                            MENUITEM "LÍdüwi",                      ID_MI40382
+                            MENUITEM "Grzbietu",                    ID_MI40383
+                            MENUITEM "Szyi",                        ID_MI40384
+                            MENUITEM "G≥owy",                       ID_MI40385
+                        END
+                        MENUITEM "MiÍdzypoprzeczne",            ID_PASMOBOCZNE_MI40386
+                    END
+                    POPUP "MiÍúnie podpotyliczne"
+                    BEGIN
+                        MENUITEM "MiÍúnieÒ skoúny g≥owy gÛrny", ID_MI40387
+                        POPUP "MiÍúnie proste g≥owy"
+                        BEGIN
+                            MENUITEM "Mniejszy",                    ID_MI40389
+                            MENUITEM "WiÍkszy",                     ID_MI40390
+                        END
+                        MENUITEM "MiÍúnieÒ skoúny g≥owy dolny", ID_MI40391
+                        MENUITEM "MiÍúnieÒ prosty g≥owy boczny", ID_MI40392
+                    END
+                END
+                POPUP "PowiÍzie grzbietu"
+                BEGIN
+                    MENUITEM "PowiÍü powierzchniowa grzbietu", ID_POWI40393
+                    MENUITEM "PowiÍü piersiowo-lÍdüwiowa",  ID_POWI40394
+                    MENUITEM "PowiÍü karku",                ID_POWI40395
+                END
+            END
+        END
+    END
+    POPUP "UbiÛr"
+    BEGIN
+        POPUP "G≥owa"
+        BEGIN
+            POPUP "Czapka"
+            BEGIN
+                POPUP "Kolor"
+                BEGIN
+                    MENUITEM "Czerwony",                    ID_KOLOR_CZERWONY
+                    MENUITEM "Bia≥y",                       ID_KOLOR_BIA40504
+                    MENUITEM "Czarny",                      ID_KOLOR_CZARNY
+                END
+            END
+        END
+        POPUP "Twarz"
+        BEGIN
+            MENUITEM "G≥upia mina",                 ID_TWARZ_G40506
+            MENUITEM "Nic",                         ID_TWARZ_NIC
+        END
+        POPUP "Szyja"
+        BEGIN
+            MENUITEM "Puste",                       ID_SZYJA_PUSTE
+            MENUITEM "Stryczek",                    ID_SZYJA_STRYCZEK
+        END
+        POPUP "Tu≥Ûw"
+        BEGIN
+            POPUP "Koszula"
+            BEGIN
+                MENUITEM "I tak za duøa",               ID_KOSZULA_ITAKZADU40512
+            END
+            POPUP "Koszulka"
+            BEGIN
+                MENUITEM "i tak za duøa",               ID_KOSZULKA_ITAKZADU40513
+            END
+        END
+        POPUP "Spodnie"
+        BEGIN
+            POPUP "Czarne"
+            BEGIN
+                POPUP "Obcis≥e"
+                BEGIN
+                    POPUP "KrÛtkie"
+                    BEGIN
+                        MENUITEM "Wystarczajπco krÛtkie by by≥y d≥ugie", ID_KR40517
+                    END
+                END
+            END
+        END
+        POPUP "Buty"
+        BEGIN
+            POPUP "Pe≥ne"
+            BEGIN
+                MENUITEM "Worki po kartoflach",         ID_PE40520
+            END
+            POPUP "Niepe≥ne"
+            BEGIN
+                MENUITEM "Dziurawe worki po kartoflach", ID_NIEPE40521
+            END
+        END
+        POPUP "Dodatki"
+        BEGIN
+            POPUP "Pasek"
+            BEGIN
+                POPUP "G≥adki"
+                BEGIN
+                    POPUP "Czerwony"
+                    BEGIN
+                        MENUITEM "Tylko klamra",                ID_CZERWONY_TYLKOKLAMRA
+                    END
+                END
+            END
+        END
+    END
+END
+
 #endif    // Polish (Poland) resources
 /////////////////////////////////////////////////////////////////////////////
 
@@ -74,12 +1585,11 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 // Dialog
 //
 
-IDD_MAINVIEW DIALOGEX 0, 0, 153, 70
+IDD_MAINVIEW DIALOGEX 0, 0, 289, 171
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU
 CAPTION "Window"
 FONT 8, "MS Shell Dlg", 400, 0, 0x0
 BEGIN
-    LTEXT           "TODO: layout formview",IDC_STATIC,55,42,74,8
 END
 
 
@@ -94,7 +1604,9 @@ BEGIN
     IDD_MAINVIEW, DIALOG
     BEGIN
         LEFTMARGIN, 7
+        RIGHTMARGIN, 153
         TOPMARGIN, 7
+        BOTTOMMARGIN, 70
     END
 END
 #endif    // APSTUDIO_INVOKED
