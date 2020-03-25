@@ -2,15 +2,23 @@
 #include "res.h"
 #include <string>
 HINSTANCE g_hInstance;
+bool array = false;
 
 INT_PTR CALLBACK hWindowProcKa(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
   switch (uMsg)
   {
   case WM_CLOSE:
+    if (array == true) {
     DestroyWindow(hwndDlg);
     PostQuitMessage(0);
     return TRUE;
+  }
+  else 
+  {
+      DestroyWindow(hwndDlg);
+      array = true;
+  }
   case WM_INITDIALOG:
     HICON hIcon = LoadIcon(g_hInstance, MAKEINTRESOURCE(IDI_DRUGA));
     SendMessage(hwndDlg, WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
@@ -26,9 +34,16 @@ INT_PTR CALLBACK hWindowProcKo(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lP
   switch (uMsg)
   {
   case WM_CLOSE:
-    DestroyWindow(hwndDlg);
-    PostQuitMessage(0);
-    return TRUE;
+    if (array == true) {
+      DestroyWindow(hwndDlg);
+      PostQuitMessage(0);
+      return TRUE;
+    }
+    else
+    {
+      DestroyWindow(hwndDlg);
+      array = true;
+    }
   case WM_INITDIALOG:
     HICON hIcon = LoadIcon(g_hInstance, MAKEINTRESOURCE(IDI_TRZECIA));
     SendMessage(hwndDlg, WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
